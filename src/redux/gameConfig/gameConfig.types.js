@@ -1,0 +1,1 @@
+export const SET_GAME_CONFIG = 'SET_GAME_CONFIG';

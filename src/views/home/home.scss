@@ -1,0 +1,36 @@
+@import "@config/styles/breakpoints.scss";
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  &__title {
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  &__slogan {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+  &__options-group {
+    margin-top: 60px;
+  }
+  @include minBreakpoint(mobile) {
+    &__title {
+      font-size: 34px;
+    }
+    &__slogan {
+      font-size: 21px;
+    }
+  }
+  @include minBreakpoint(tablet) {
+    &__title {
+      font-size: 40px;
+    }
+    &__slogan {
+      font-size: 24px;
+    }
+  }
+}

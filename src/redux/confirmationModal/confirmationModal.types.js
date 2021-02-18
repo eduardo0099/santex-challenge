@@ -1,0 +1,2 @@
+export const SET_MODAL_TEXT = 'SET_MODAL_TEXT';
+export const SET_BUTTON_CALLBACK = 'SET_BUTTON_CALLBACK';

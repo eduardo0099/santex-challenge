@@ -1,0 +1,14 @@
+@mixin minBreakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1680px) { @content ; }
+  }
+  @else if $point == laptop {
+    @media (min-width: 1366px) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == mobile {
+    @media (min-width: 420px)  { @content ; }
+  }
+}

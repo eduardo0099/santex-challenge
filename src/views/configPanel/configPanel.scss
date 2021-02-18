@@ -1,0 +1,39 @@
+@import "@config/styles/breakpoints.scss";
+
+.config {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &--difficulty {
+    flex-direction: row;
+    flex-wrap: wrap;
+    & > .config--button {
+      margin: 5px;
+      width: 100%;
+    }
+  }
+  &--difficulty-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  &--custom-input {
+    margin-top: 16px;
+    width: calc(100% - 10px);
+    margin: 15px 5px 10px 5px;
+  }
+  &--start-button {
+    background-color: #6ec363;
+    color: #ffffff;
+    border: 1px solid #6ec363;
+    margin-top: 24px;
+    &:hover {
+      background-color: #65b95a;
+    }
+  }
+  @include minBreakpoint(mobile) {
+    &--difficulty > .config--button {
+      width: calc(50% - 10px);
+    }
+  }
+}

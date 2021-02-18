@@ -1,0 +1,33 @@
+@import "@config/styles/breakpoints.scss";
+
+.stats {
+  display: flex;
+  margin-top: 60px;
+  background-color: #efd627;
+  border-radius: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__var {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    
+    text-align: center;
+    margin: 11px 10px;
+  }
+  &__value {
+    color: #f54646;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  @include minBreakpoint(mobile) {
+    &__var {
+      width: calc(50% - 20px);
+    }
+  }
+  @include minBreakpoint(tablet) {
+    &__var {
+      width: calc(25% - 20px);
+    }
+  }
+}

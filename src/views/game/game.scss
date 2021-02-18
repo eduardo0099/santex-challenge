@@ -1,0 +1,10 @@
+.game {
+  text-align: center;
+  margin-top: 70px;
+  &__grid-wrapper {
+    margin-top: 60px;
+  }
+  &__board-wrapper {
+    margin-bottom: 60px;
+  }
+}
